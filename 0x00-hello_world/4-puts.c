@@ -1,5 +1,4 @@
-#include<stdio.h>
-#include<string.h>
+#include <stdio.h>
 
 /**
  * main - print the string in the put funtion
@@ -10,8 +9,6 @@
  */
 int main(void)
 {
-	char str [50]:
-	strcpy(str, "Programming is like building a multilingual puzzle\n");
-	puts (str);
+	puts("\"Programming is like building a multilingual puzzle");
 	return(0);
 }
