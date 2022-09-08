@@ -8,10 +8,10 @@
  * This program prints "Programming is like building a multilingual puzzle"
  * Return: 0
  */
-int main()
+int main(void)
 {
-	char Mystr [50]:
-		Mystrcpy(Mystr, "Programming is like building a multilingual puzzle \n");
-	puts (Mystr);
+	char str [50]:
+	strcpy(str, "Programming is like building a multilingual puzzle\n");
+	puts (str);
 	return(0);
 }
