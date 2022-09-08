@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -E $CFILe -o c only
+gcc -c $CFILE
