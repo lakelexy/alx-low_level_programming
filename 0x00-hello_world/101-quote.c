@@ -3,12 +3,11 @@
 /**
  * main - Entry point
  *
- * Description: using the main function
- * Return: Always return 0 (success)
+ * Return:Always return 0 (success)
  */
 int main(void)
 {
-	write(2, "and that piece of art is useful\"- Dora Korpar, 2015-10-19\n",59);
+	write(2,"and that piece of art is useful\"- Dora Korpar, 2015-10-19\n",59);
 	return (1);
 }
 
