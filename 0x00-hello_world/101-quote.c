@@ -1,13 +1,14 @@
+#include <stdio.h>
 #include <unistd.h>
 /**
- * main - print the string without using the printf and puts function
+ * main - Entry point
  *
  * Description: using the main function
- * Return:returns 1
+ * Return: Always return 0 (success)
  */
 int main(void)
 {
-	fprintf(stderr, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n");
+	write(2, "and that piece of art is useful\"- Dora Korpar, 2015-10-19\n",59);
 	return (1);
 }
 
