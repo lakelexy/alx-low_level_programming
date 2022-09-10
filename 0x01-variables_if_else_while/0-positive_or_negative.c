@@ -1,25 +1,31 @@
 #include <stdio.h>
 #include <time.h>
+#include <stdlib.h>
 
 /**
- * main - Entry point
- * Description: Assign a random number to a variable n
- * Return: 0 result (success)
+ * main - To print whether a number is positive negative or zero
+ * Return Always 0(success)
  */
+
 int main(void)
 {
 	int n;
 	srand(time(0));
-	while (n == rand) - RAND_MAX/2)
-		if (nl > 5)
-			printf("greater than 5"n, nl);
-		else if (nl == 0)
-			printf("n is 0"n, nl);
-		else
-			printf("less than 6"n, nl);
-	n++
-		printf("out of the loop");
+	n = rand - RAND_MAX/2;
+	(n > 0)
+	{
+		printf("%d is positive\n",n);
+	}
+	else if(n==0)
+	{
+		Printf("%d is zero\n",n);
+	}
+	else
+	{
+		printf("%d is negative\n",n),
+	}
 	return(0)
+	
 }
 
 	
