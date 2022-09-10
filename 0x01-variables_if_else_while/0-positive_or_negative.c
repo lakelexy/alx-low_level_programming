@@ -3,8 +3,10 @@
 #include <stdlib.h>
 
 /**
- * main - To print whether a number is positive negative or zero
- * Return Always 0 (success)
+ * main - print the number in the printf function
+ *
+ * Description: Using the main function
+ * Return: Always 0 (success)
  */
 
 int main(void)
