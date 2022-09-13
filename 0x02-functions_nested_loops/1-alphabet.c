@@ -3,6 +3,8 @@
  * print_alphabet- prints the alphabet in lowercase
  *
  * Return: Always 0 (success)
+ * @void: lorem ipsum
+ * Description: this function prints all the alphabet
  */
 void print_alphabet(void);
 {
@@ -12,7 +14,7 @@ void print_alphabet(void);
 	for (i = 0; i < 26; i++)
 	{
 		putchar(a);
-		a++
+		a++;
 	}
 	putchar('\n');
 }
