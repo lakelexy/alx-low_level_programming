@@ -4,14 +4,13 @@
  *
  * Return: Always 0 (success)
  */
-int _putchar;
+int _putchar(char c);
 {
 
-	char alp[26] = "abcdefghijklmnopqrst";
-	int i;
-	for (i = 0; i < 26; i++)
+	char ch;
+	for (ch = 'a'; ch <= 'z'; ch++)
 		{
-			putchar(alp[i])
+			putchar(ch);
 		}
 putchar('\n');
 return (0);
