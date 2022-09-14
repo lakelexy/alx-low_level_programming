@@ -3,7 +3,7 @@
  * times_table - functions to print the 9 times table
  * Return: void
  */
-void times_table(void)
+int print_sign(int c)
 {
 	if (c > 0)
 	{
