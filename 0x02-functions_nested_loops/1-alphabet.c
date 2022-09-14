@@ -1,12 +1,10 @@
 #include "main.h"
 /**   
- * print_alphabet- prints the alphabet in lowercase
+ * print_alphabet- function to prints the alphabet in lowercase
  *
- * Return: Always 0 (success)
- * @void: lorem ipsum
- * Description: this function prints all the alphabet
+ * Return: void
  */
-void print_alphabet(void);
+void print_alphabet(void)
 {
 	char a = 'a';
 	int i;
