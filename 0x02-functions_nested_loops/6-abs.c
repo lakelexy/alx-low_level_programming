@@ -4,5 +4,9 @@
  */
 int _abs(int)
 {
-	return n*((2*n+1)%2);
+	int v;
+	unsigned int r;
+	int const mask = v >> sizeof(int) * CHAR_BIT - 1;
+
+	r = (v + mask) ^ mask;
 }
