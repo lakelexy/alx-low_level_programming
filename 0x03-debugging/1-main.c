@@ -2,8 +2,9 @@
 
 /**
  * main - causes an infinite loop
- *  (don’t delete it!) the part of the code that is causing the output to go into an infinite loop
- *  Return: 0
+ * Infinite loop incoming : (don’t delete it!)
+ * Infinite loop avoided! \o/ 
+ * Return: 0
  */
 
 int main(void)
