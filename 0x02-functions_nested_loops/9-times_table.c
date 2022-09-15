@@ -3,22 +3,33 @@
  * times_table - functions to print the 9 times table
  * Return: void
  */
-int print_sign(int c)
+void times_table(void)
 {
-	if (c > 0)
+	int num;
+	int mult;
+	int prod;
+
+	for (num = 0; num <= 9; num++)
 	{
-		_putchar('+');
-			return (1);
-	}
-	else if (c < 0)
-	{
-		_putchar('-');
-		return (-1);
-	}
-	else (c == 0)
-	{
-		_putchar('0');
-		return (0);
+		for (mult = 0; mult <= 9; mult++)
+			prod = num * mult
+				if (mult == 0)
+				{
+					_putchar('0');
+				}
+				else if (prod <= 9)
+				{
+					_putchar(',');
+					_putchar(' ');
+					_putchar(prod + '0');
+				}
+				else
+				{
+					_putchar(',');
+					_putchar(' ');
+					_putchar((prod / 10) + '0');
+					_putchar((prod % 10) + '0');
+				}
 	}
 	_putchar('\n');
 }
