@@ -2,8 +2,7 @@
 
 /**
  * main - causes an infinite loop
- * Infinite loop incoming : (don’t delete it!)
- * Infinite loop avoided! \o/ 
+ * Description: print out only Infinite loop incoming :( and Infinite loop avoided! \o/ 
  * Return: 0
  */
 
