@@ -2,7 +2,7 @@
 
 /**
  * main - causes an infinite loop
- * Description: print out only Infinite loop incoming :( and Infinite loop avoided! \o/ 
+ * Description: wc - 1 1-main.c 13:22:
  * Return: 0
  */
 
