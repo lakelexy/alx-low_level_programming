@@ -1,5 +1,6 @@
 #include "main.h"
 
+
 /**
  * print_sign - Check main
  * @n: An input number
@@ -15,6 +16,7 @@ int print_sign(int n)
 	{
 		value = 1;
 		_putchar('+');
+
 		else if (n == 0)
 		{
 			value = 0;
