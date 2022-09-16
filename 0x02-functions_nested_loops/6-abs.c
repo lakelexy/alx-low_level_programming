@@ -1,12 +1,15 @@
 #include "main.h"
-/**
- * int _abs - function that compute the absolute value of integer
- */
-int _abs(int)
-{
-	int v;
-	unsigned int r;
-	int const mask = v >> sizeof(int) * CHAR_BIT - 1;
 
-	r = (v + mask) ^ mask;
+/**
+ * _abs - Check main.h
+ * @r: An integre input
+ * Description: This function returns absolute value of a number
+ * Return: Absolut value of number r
+ */
+int _abs(int r)
+{
+	if (r >= 0)
+		return (r);
+	else
+		return (r * -1);
 }
