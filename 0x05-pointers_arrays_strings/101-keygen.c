@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
+#include <unistd.h>
 #include <time.h>
 
 /**
@@ -10,17 +12,47 @@
  */
 int main(void)
 {
-	srand((unsigned int)(time(NULL)));
-	int i;
+	printf("length: ");
 
-	for (i = 0; i < 4; i++)
+	int length;
+	if (length <= 0)
 	{
-		pass[i] = rand() % 9;
-		char capLetter = 'A' + (rand() % 26);
-		pass[i + 2] = capLetter;
-		char letter = 'a' + (rand() % 26);
-		pass[i + 3] = letter;
-		printf("%d%c%c", pass[i], pass[i + 2], pass[i + 3]);
+		printf("password length must be >= 1!");
+		return 1;
 	}
-	printf("\n\n");
+	char *password = malloc(length + 1);
+
+	char *digits = "0123456789";
+	int digits_length = strlen(digits);
+
+	char *lowers = "abcdefghijklmnopqrstuvwxyz";
+	int lowers_length = strlen(lowers);
+
+	char *uppers = "ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+	int uppers_length = strlen(uppers);
+
+	char *symbols = "!@#$%^&*()";
+	int symbols_length = strlen(symbols);
+
+	srand(time (NULL) * getpid());
+
+	for (int i  = 0; i < length; i++)
+	{
+		int char_type = rand() % 4;
+
+	if (char_type == 0)
+		password[i] = digits[rand() % digits_length];
+	else if (char_type == 1)
+		password[i] = lowers[rand() % lowers_length];
+	else if (char_type == 2)
+		password[i] = uppers[rand() % uppers_length];
+	else
+		password[i] = symbols[rand() %symbols_length];
+	}
+	password[length] = '\0';
+
+	printf("password: %s\n", password);
+
+	free(password);
+	return 0;
 }
