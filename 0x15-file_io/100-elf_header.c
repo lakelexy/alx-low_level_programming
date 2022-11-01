@@ -99,7 +99,6 @@ void print_data(unsigned char *e_ident)
 			break;
 		default:
 			printf("<unknown: %x>\n", e_ident[EI_CLASS]);
-			
 	}
 }
 
