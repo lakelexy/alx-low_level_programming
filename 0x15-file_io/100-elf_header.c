@@ -98,8 +98,29 @@ void print_data(unsigned char *e_ident)
 			printf("2's complement, big endian\n");
 			break;
 		default:
+			printf("<unknown: %x>\n", e_ident[EI_CLASS]);
+			
+	}
+}
+
+/**
+ * print_version - Prints the version of an ELF header.
+ * @e_ident: A pointer to an array containing the ELF version.
+ */
+void print_version(unsigned char *e_ident)
+{
+	printf("  Version:                           %d",
+			e_ident[EI_VERSION]);
+
+	switch (e_ident[EI_VERSION])
+	{
+		case EV_CURRENT:
+			printf(" (current)\n");
+			break;
+		default:
 			printf("\n");
 			break;
+
 	}
 }
 
@@ -270,6 +291,7 @@ int main(int __attribute__((__unused__)) argc, char *argv[])
 		dprintf(STDERR_FILENO, "Error: `%s`: No such file\n", argv[1]);
 		exit(98);
 	}
+
 	check_elf(header->e_ident);
 	printf("ELF Header:\n");
 	print_magic(header->e_ident);
