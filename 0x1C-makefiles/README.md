@@ -1,1 +1,1 @@
- This folder is all about 0x1C. C - Makefiles
+This folder is all about 0x1C. C - Makefiles
