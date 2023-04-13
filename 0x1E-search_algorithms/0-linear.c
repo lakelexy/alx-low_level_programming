@@ -7,8 +7,7 @@
   * @size: The number of elements in the array.
   * @value: The value to search for.
   *
-  * Return: If the value is not present or the array is NULL, -1.
-  *         else, the first index where the value is located.
+  * Return: Always EXIT_SUCCESS
   *
   * Description: Prints a value every time it is compared in the array.
   */
