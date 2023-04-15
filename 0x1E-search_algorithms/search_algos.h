@@ -6,11 +6,11 @@
 #include <stdlib.h>
 
 /**
- *
  * @n: Integer
+ *
  * @index: Index of the node in the list
  * @next: Pointer to the next node
- * 
+ *
  * Description: singly linked list node structure
  */
 typedef struct listint_s
@@ -31,7 +31,7 @@ typedef struct listint_s
  * Description: singly linked list node structure with an express lane
  */
 typedef struct skiplist_s
-{	
+{
 	int n;
 	size_t index;
 	struct skiplist_s *next;
